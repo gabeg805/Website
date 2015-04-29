@@ -1,0 +1,307 @@
+/* ===================== 
+   ===== HTML TAGS ===== 
+   ===================== */
+
+html, body { height:100%; }
+html { font-size:100%; }
+body { 
+    font-family: 'Lato', sans-serif; 
+    font-size:1em; 
+    margin:0;
+    padding:0; 
+}
+header { margin:0; padding:0; }
+
+hr {
+    display:block;
+    margin:0 auto;
+    border-width:10px;
+    border-color:#0D5C36;
+}
+
+h1, h2, h3 { color:#FFFFFF; margin:0; padding:0; } /* margin:0; padding:0; */
+h1 { font-family:'Montserrat'; font-size:4.5em; }
+h2 { font-family:'Montserrat'; font-size:56px; }
+h3 { font-family:'Alegreya Sans SC'; font-size:26px; }
+p  { font-size:16px; line-height:30px; color:#333333; }
+
+
+
+/* =================== 
+   ===== BUTTONS ===== 
+   =================== */
+
+.btn,
+.btn:hover,
+.btn:focus {
+    font-family:'Montserrat';
+    border-bottom:0.25em solid #FFFFFF; 
+    color:white; 
+}
+
+
+
+/* ======================== 
+   ===== PAGE STYLING ===== 
+   ======================== */
+
+/* Alignment */
+.align-center { text-align:center; }
+.align-left   { text-align:left;   }
+.align-right  { text-align:right;  }
+
+
+
+/* ========================== 
+   ===== NAVIGATION BAR ===== 
+   ========================== */
+
+/* Navigation bar container */
+.navbar { 
+    width:100%; 
+    height:4.75em; 
+    margin:0;
+    border:none; 
+    border-radius:0; 
+    background-color:#138B51; /* Darkish green-blue */
+}
+
+.navbar .container { width:100%; height:100%; margin:0; padding:0; }
+.navbar a          { color:white; }
+
+/* Left side of navigation bar */
+.nav-left     { 
+    float:left;  
+    overflow:auto; 
+    width:50%;
+    margin:0;
+    padding:0.7em 0 0 2em;
+    text-align:left;
+}
+.nav-left img { 
+    height:3.4em; 
+    border-radius:50%;
+}
+.nav-left a   { 
+    font-family:'Montserrat'; 
+    font-size:1.5em; 
+    top:0.2em; 
+    left:0.75em; 
+    position:relative; 
+}
+
+/* Right side of navigation bar */
+.nav-right    { 
+    float:right; 
+    overflow:auto; 
+    width:50%; 
+    margin:0;
+    padding:1.6em 2em 0 0;
+    text-align:right;
+}
+.nav-right li { 
+    font-family:'Alegreya Sans SC'; 
+    font-size:1.1em; 
+    float:right; 
+    display:inline; 
+    position:relative;
+    padding-left:1.5em;
+}
+
+
+
+/* ===================== 
+   ===== HOME PAGE ===== 
+   ===================== */
+
+.home     { padding:1.5em 0 2.5em 0; background-color:#21E887; } /* Light green */
+.home img { height:23em; margin:0 auto; border-radius:5%; }
+.home h1  { padding: 0.2em 0; }
+.home a   { margin:0 0.5em; }
+
+.home-btn {
+    border:0.1em solid #FFFFFF; 
+    border-bottom:0.2em solid #FFFFFF; 
+    border-right:0.2em solid #FFFFFF; 
+    background-color:transparent;
+}
+
+.home-btn:hover,
+.home-btn.btn-active {
+    border:0.1em solid #138B51; /* Dark green */
+    border-bottom:0.1em solid #138B51; /* Dark green */
+    color:#138B51; /* Dark green */
+    transition:0.4s;
+}
+
+
+
+/* ==================== 
+   ===== ABOUT ME ===== 
+   ==================== */
+
+.about    { padding:48px 0 0 0; background-color:#1ABC9C; } /* Blue-green */
+.about img { padding:0 20px 0 0; }
+.about h3  { margin-top:0; }
+
+
+/* ================== 
+   ===== SKILLS ===== 
+   ================== */
+
+/* Skills page */
+.skills     { display:none; padding:30px 0; background-color:#333333; } /* Charcoal gray */
+.skills-btn { 
+    border-radius:5% 5% 0 0;
+    border:none; 
+    background-color:#F55203; /* Orange */
+    
+}
+
+
+.skills-btn:hover,
+.skills-btn:focus {
+    border:none; 
+    background-color:#ED4E0D; /* Darker orange */
+}
+
+
+/* Easy pie chart to measure skill level */
+.skills .col-md-3    { padding-top:10px; padding-bottom:10px; }
+.easyPieChart        { position: relative; }
+.easyPieChart canvas { top: 0; left: 0; position: absolute; }
+
+.chart {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+    
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+    padding-left:0.5em;
+    padding-top:0.25em;
+    color:#FFFFFF;
+}
+
+
+
+/* ==================== 
+   ===== PROJECTS ===== 
+   ==================== */
+
+.projects    { padding:48px 0; background-color:#66AAFF; } /* Light blue */
+
+
+
+/* ================== 
+   ===== QUOTES ===== 
+   ================== */
+
+.quotes           { padding:48px 0; background-color:#D96ADB; } /* Purple-pink */
+.quotes-style     { padding:auto 5px; margin:0; border-color:#333333; }
+.quotes-style p   { font-size:24px; margin:auto 3px 10px 3px; }
+
+
+
+/* ====================== 
+   ===== CONTACT ME ===== 
+   ====================== */
+
+/* Contact me page */
+.contact { padding:48px 0; background-color:#1ABC9C; } /* Blue-green */
+.contact h2 { padding-bottom:20px; }
+.contact h3 { padding-bottom:10px; }
+.contact img { width:90%; padding-top:63px; }
+
+/* Contact form fields */
+.feedback {
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+	font-size: 16px;
+	line-height: 22px;
+	
+    width:100%;
+    border:none;
+    border-radius: 5px;
+	padding: 13px 13px 13px 54px;
+	
+	color:#3C3C3C;
+    background-color: #FBFBFB;
+}
+
+.feedback:focus{ color: #3498db; }
+
+.form-div textarea {
+    width:100%;
+    height:250px;
+    line-height:150%;
+    min-height:200px;
+    resize:vertical;
+}
+
+.form-div input:hover, textarea:hover,
+.form-div input:focus, textarea:focus {
+	background-color:white;
+}
+
+/* Form img overlay */
+.form-field {
+    padding-bottom:10px;
+    position:relative;
+}
+
+.field-img-name,
+.field-img-email,
+.field-img-text {
+    position: absolute;
+    background:transparent;
+    font-size:22px;
+}
+
+.field-img-name  { top:11px; left:22px; }
+.field-img-email { top:11px; left:18px; }
+.field-img-text  { top:11px; left:18px; }
+
+/* Send button */
+.submit { font-family:'Montserrat'; font-size:18px; }
+.submit-btn {
+    padding: 10px 20px;
+    border:none;
+    border-radius: 14px;
+    text-decoration: none;
+    
+    color:#FFFFFF;
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498DB, #2980B9);
+}
+
+.submit-btn:hover {
+    text-decoration: none;
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3CB0FD, #3498DB);
+}
+
+
+
+/* ================== 
+   ===== FOOTER ===== 
+   ================== */
+
+.footer     { padding:20px 0; background-color:#333333 }
+.footer-txt { padding:10px 0; color:white; }
+
+.btn-footer {
+    border-radius:50%;
+    border:transparent;
+    background-color:transparent;
+    color:#c9c9c9;
+}
+
+.btn-footer:hover,
+.btn-footer.btn-active {
+    border:none;
+    background-color:#FF8110;
+    color:white; 
+}
