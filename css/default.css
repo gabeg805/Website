@@ -1,307 +1,323 @@
-/* ===================== 
-   ===== HTML TAGS ===== 
-   ===================== */
-
-html, body { height:100%; }
-html { font-size:100%; }
-body { 
-    font-family: 'Lato', sans-serif; 
-    font-size:1em; 
-    margin:0;
-    padding:0; 
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
-header { margin:0; padding:0; }
-
-hr {
-    display:block;
-    margin:0 auto;
-    border-width:10px;
-    border-color:#0D5C36;
+html {
+  font-size: 100%;
 }
-
-h1, h2, h3 { color:#FFFFFF; margin:0; padding:0; } /* margin:0; padding:0; */
-h1 { font-family:'Montserrat'; font-size:4.5em; }
-h2 { font-family:'Montserrat'; font-size:56px; }
-h3 { font-family:'Alegreya Sans SC'; font-size:26px; }
-p  { font-size:16px; line-height:30px; color:#333333; }
-
-
-
-/* =================== 
-   ===== BUTTONS ===== 
-   =================== */
-
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #3c3c3c;
+}
+h1 {
+  font-family: 'Montserrat';
+  font-size: 3.5em;
+}
+h2 {
+  font-family: 'Alegreya Sans SC';
+  font-size: 3em;
+}
+h3 {
+  font-family: 'Alegreya Sans SC';
+  font-size: 2em;
+}
+h4 {
+  font-family: 'Alegreya Sans SC';
+  font-size: 1em;
+}
+p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
 .btn,
 .btn:hover,
 .btn:focus {
-    font-family:'Montserrat';
-    border-bottom:0.25em solid #FFFFFF; 
-    color:white; 
+  font-family: 'Montserrat';
+  border-bottom: 0.25em solid #ffffff;
+  color: #ffffff;
 }
-
-
-
-/* ======================== 
-   ===== PAGE STYLING ===== 
-   ======================== */
-
-/* Alignment */
-.align-center { text-align:center; }
-.align-left   { text-align:left;   }
-.align-right  { text-align:right;  }
-
-
-
-/* ========================== 
-   ===== NAVIGATION BAR ===== 
-   ========================== */
-
-/* Navigation bar container */
-.navbar { 
-    width:100%; 
-    height:4.75em; 
-    margin:0;
-    border:none; 
-    border-radius:0; 
-    background-color:#138B51; /* Darkish green-blue */
+.align-center {
+  text-align: center;
 }
-
-.navbar .container { width:100%; height:100%; margin:0; padding:0; }
-.navbar a          { color:white; }
-
-/* Left side of navigation bar */
-.nav-left     { 
-    float:left;  
-    overflow:auto; 
-    width:50%;
-    margin:0;
-    padding:0.7em 0 0 2em;
-    text-align:left;
+.align-left {
+  text-align: left;
 }
-.nav-left img { 
-    height:3.4em; 
-    border-radius:50%;
+.align-right {
+  text-align: right;
 }
-.nav-left a   { 
-    font-family:'Montserrat'; 
-    font-size:1.5em; 
-    top:0.2em; 
-    left:0.75em; 
-    position:relative; 
+header {
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: url("../img/nightsky2.jpg");
 }
-
-/* Right side of navigation bar */
-.nav-right    { 
-    float:right; 
-    overflow:auto; 
-    width:50%; 
-    margin:0;
-    padding:1.6em 2em 0 0;
-    text-align:right;
+.navbar {
+  width: 100%;
+  height: 4.75em;
+  margin: 0;
+  border-bottom: 1px solid #0f6f40;
+  border-radius: 0;
+  background-color: #041e4a;
+  box-shadow: 0 0.25em 0.125em #888888;
 }
-.nav-right li { 
-    font-family:'Alegreya Sans SC'; 
-    font-size:1.1em; 
-    float:right; 
-    display:inline; 
-    position:relative;
-    padding-left:1.5em;
+.navbar .container {
+  width: 100%;
+  height: 100%;
 }
-
-
-
-/* ===================== 
-   ===== HOME PAGE ===== 
-   ===================== */
-
-.home     { padding:1.5em 0 2.5em 0; background-color:#21E887; } /* Light green */
-.home img { height:23em; margin:0 auto; border-radius:5%; }
-.home h1  { padding: 0.2em 0; }
-.home a   { margin:0 0.5em; }
-
-.home-btn {
-    border:0.1em solid #FFFFFF; 
-    border-bottom:0.2em solid #FFFFFF; 
-    border-right:0.2em solid #FFFFFF; 
-    background-color:transparent;
+.navbar a {
+  color: #ffffff;
 }
-
-.home-btn:hover,
-.home-btn.btn-active {
-    border:0.1em solid #138B51; /* Dark green */
-    border-bottom:0.1em solid #138B51; /* Dark green */
-    color:#138B51; /* Dark green */
-    transition:0.4s;
+.navbar ul {
+  overflow: auto;
+  width: 100%;
+  margin: 0;
+  padding: 1.6em 2em 0 0;
+  text-align: center;
 }
-
-
-
-/* ==================== 
-   ===== ABOUT ME ===== 
-   ==================== */
-
-.about    { padding:48px 0 0 0; background-color:#1ABC9C; } /* Blue-green */
-.about img { padding:0 20px 0 0; }
-.about h3  { margin-top:0; }
-
-
-/* ================== 
-   ===== SKILLS ===== 
-   ================== */
-
-/* Skills page */
-.skills     { display:none; padding:30px 0; background-color:#333333; } /* Charcoal gray */
-.skills-btn { 
-    border-radius:5% 5% 0 0;
-    border:none; 
-    background-color:#F55203; /* Orange */
-    
+.navbar li {
+  display: inline;
+  position: relative;
+  font-family: 'Alegreya Sans SC';
+  font-size: 1.1em;
+  padding-left: 1.5em;
 }
-
-
-.skills-btn:hover,
-.skills-btn:focus {
-    border:none; 
-    background-color:#ED4E0D; /* Darker orange */
+.title-focus {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 3em auto;
+  border-bottom: 1px solid #3c3c3c;
 }
-
-
-/* Easy pie chart to measure skill level */
-.skills .col-md-3    { padding-top:10px; padding-bottom:10px; }
-.easyPieChart        { position: relative; }
-.easyPieChart canvas { top: 0; left: 0; position: absolute; }
-
-.chart {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 100px;
-    text-align: center;
-    
-    height: 100px;
-    width: 100px;
-    margin: 10px auto;
-    padding-left:0.5em;
-    padding-top:0.25em;
-    color:#FFFFFF;
+.title-focus h2 {
+  display: inline;
+  position: relative;
+  bottom: -0.5em;
+  padding: 0 0.5em;
+  background: #fff6eb;
 }
-
-
-
-/* ==================== 
-   ===== PROJECTS ===== 
-   ==================== */
-
-.projects    { padding:48px 0; background-color:#66AAFF; } /* Light blue */
-
-
-
-/* ================== 
-   ===== QUOTES ===== 
-   ================== */
-
-.quotes           { padding:48px 0; background-color:#D96ADB; } /* Purple-pink */
-.quotes-style     { padding:auto 5px; margin:0; border-color:#333333; }
-.quotes-style p   { font-size:24px; margin:auto 3px 10px 3px; }
-
-
-
-/* ====================== 
-   ===== CONTACT ME ===== 
-   ====================== */
-
-/* Contact me page */
-.contact { padding:48px 0; background-color:#1ABC9C; } /* Blue-green */
-.contact h2 { padding-bottom:20px; }
-.contact h3 { padding-bottom:10px; }
-.contact img { width:90%; padding-top:63px; }
-
-/* Contact form fields */
-.feedback {
-	font-family: Helvetica, Arial, sans-serif;
-    font-weight:500;
-	font-size: 16px;
-	line-height: 22px;
-	
-    width:100%;
-    border:none;
-    border-radius: 5px;
-	padding: 13px 13px 13px 54px;
-	
-	color:#3C3C3C;
-    background-color: #FBFBFB;
+.text-focus {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em 0;
 }
-
-.feedback:focus{ color: #3498db; }
-
-.form-div textarea {
-    width:100%;
-    height:250px;
-    line-height:150%;
-    min-height:200px;
-    resize:vertical;
+.text-focus p {
+  margin: 0;
 }
-
-.form-div input:hover, textarea:hover,
-.form-div input:focus, textarea:focus {
-	background-color:white;
+.home {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-/* Form img overlay */
-.form-field {
-    padding-bottom:10px;
-    position:relative;
+.home a {
+  font-size: 1.1em;
+  position: relative;
+  top: -0.8em;
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #041e4a;
 }
-
-.field-img-name,
-.field-img-email,
-.field-img-text {
-    position: absolute;
-    background:transparent;
-    font-size:22px;
+.home i {
+  bottom: 0.15em;
+  position: relative;
 }
-
-.field-img-name  { top:11px; left:22px; }
-.field-img-email { top:11px; left:18px; }
-.field-img-text  { top:11px; left:18px; }
-
-/* Send button */
-.submit { font-family:'Montserrat'; font-size:18px; }
-.submit-btn {
-    padding: 10px 20px;
-    border:none;
-    border-radius: 14px;
-    text-decoration: none;
-    
-    color:#FFFFFF;
-    background: #3498db;
-    background-image: linear-gradient(to bottom, #3498DB, #2980B9);
+.home h1 {
+  padding: 3em 0 0 0;
+  color: #ffffff;
 }
-
-.submit-btn:hover {
-    text-decoration: none;
-    background: #3cb0fd;
-    background-image: linear-gradient(to bottom, #3CB0FD, #3498DB);
+.home h3 {
+  padding: 1em 0 0 0;
+  color: #ffffff;
 }
-
-
-
-/* ================== 
-   ===== FOOTER ===== 
-   ================== */
-
-.footer     { padding:20px 0; background-color:#333333 }
-.footer-txt { padding:10px 0; color:white; }
-
+.about {
+  padding-top: 5em;
+  background-color: #fff6eb;
+}
+.about .title-focus {
+  width: 48%;
+}
+.about img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 50vh;
+}
+.projects {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: #fff6eb;
+}
+.projects .title-focus {
+  width: 35%;
+}
+.projects .text-focus {
+  padding: 0;
+}
+.projects .project-item {
+  width: 35%;
+  margin: 0 auto;
+}
+.projects .project-item h3 {
+  padding-top: 1em;
+}
+.projects .project-item h4 {
+  padding-top: 0.5em;
+}
+.projects .project-item p {
+  padding-top: 1em;
+}
+.contact {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: #fff6eb;
+}
+.contact .title-focus {
+  width: 40%;
+}
+.contact .contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact .contact-form h3 {
+  text-align: left;
+  padding: 0 0 0.5em 0;
+}
+.contact .contact-form .feedback {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.38em;
+  width: 100%;
+  border: 0.13em solid transparent;
+  border-radius: 0.44em;
+  padding: 0.81em 0.81em 0.81em 3.34em;
+  color: #3c3c3c;
+  background-color: #ffffff;
+}
+.contact .contact-form .feedback:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 0.62em #9ecaed;
+}
+.contact .contact-form textarea {
+  width: 100%;
+  height: 15.6em;
+  line-height: 150%;
+  min-height: 12.5em;
+  resize: vertical;
+}
+.contact .contact-form input:hover,
+.contact .contact-form textarea:hover,
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+  background-color: #ffffff;
+}
+.contact .contact-form .form-field {
+  padding-bottom: 0.62em;
+  position: relative;
+}
+.contact .contact-form .field-img-name,
+.contact .contact-form .field-img-email,
+.contact .contact-form .field-img-text {
+  position: absolute;
+  font-size: 1.38em;
+  background: transparent;
+}
+.contact .contact-form .field-img-name {
+  top: 11px;
+  left: 22px;
+}
+.contact .contact-form .field-img-email {
+  top: 11px;
+  left: 18px;
+}
+.contact .contact-form .field-img-text {
+  top: 11px;
+  left: 18px;
+}
+.contact .contact-form .submit {
+  font-family: 'Montserrat';
+  font-size: 1.13em;
+}
+.contact .contact-form .submit-btn {
+  padding: 0.62em 1.25em;
+  border: none;
+  border-radius: 0.87em;
+  text-decoration: none;
+  color: #ffffff;
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+}
+.contact .contact-form .submit-btn:hover {
+  text-decoration: none;
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+.footer {
+  padding: 20px 0;
+  background-color: #333333;
+}
+.footer-txt {
+  padding: 10px 0;
+  color: #ffffff;
+}
 .btn-footer {
-    border-radius:50%;
-    border:transparent;
-    background-color:transparent;
-    color:#c9c9c9;
+  border-radius: 50%;
+  border: transparent;
+  background-color: transparent;
+  color: #c9c9c9;
 }
-
 .btn-footer:hover,
 .btn-footer.btn-active {
-    border:none;
-    background-color:#FF8110;
-    color:white; 
+  border: none;
+  background-color: #FF8110;
+  color: #ffffff;
+}
+.skills {
+  display: none;
+  padding: 30px 0;
+  background-color: #333333;
+}
+.skills .col-md-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.skills-btn {
+  border-radius: 5% 5% 0 0;
+  border: none;
+  background-color: #F55203;
+}
+.skills-btn:hover,
+.skills-btn:focus {
+  border: none;
+  background-color: #ED4E0D;
+}
+.easyPieChart {
+  position: relative;
+}
+.easyPieChart canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.chart {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  color: #FFFFFF;
 }
