@@ -5,6 +5,7 @@
 
 @white:#FFFFFF;
 @black:#000000;
+@lightGray:#C9C9C9;
 @gray:#888888;
 @darkGray:#3c3c3c;
 @jade:#0F6F40;
@@ -37,7 +38,7 @@
 @homeSubtitlePad:1em 0 0 0;
 
 // 
-@sectionSeparatorSpace:5em;
+@sectionSeparatorSpace:3em;
 
 html, body { width:100%; height:100%; }
 html { font-size:100%; }
@@ -72,62 +73,17 @@ p {
     color:#333333;
 }
 
-.btn,.btn:hover,.btn:focus {
-    font-family:@defaultFont;
-    border-bottom:0.25em solid @white;
-    color:@white;
-}
-
-.align-center {
-    text-align:center;
-}
-.align-left {
-    text-align:left;
-}
-.align-right {
-    text-align:right;
-}
-
 header {
     height:100vh;
     background-size:100% 100%;
     background-image:url("../img/nightsky2.jpg");
 }
 
-.navbar {
-    width:100%;
-    height:@navHeight;
-    margin:0;
-    border-bottom:@navBorder;
-    border-radius:0;
-    background-color:@darkNavyBlue;
-    box-shadow:0 0.25em 0.125em @gray;
-    .container {
-        width:100%;
-        height:100%;
-    }
-    a { color:@white; }
-    ul {
-        overflow:auto;
-        width:100%;
-        margin:0;
-        padding:@navTitlePad;
-        text-align:center;
-    }
-    li {
-        display:inline;
-        position:relative;
-        font-family:@backupFont;
-        font-size:@navFontSize;
-        padding-left:@navTitleSpacing;
-    }
-}
-
 .title-focus {
     text-align:center;
     width:50%;
     margin:0 auto 3em auto;
-    border-bottom:1px solid @darkGray;
+    border-bottom:0.062em solid @darkGray;
     h2 {
         display:inline;
         position:relative;
@@ -143,44 +99,71 @@ header {
     p{ margin:0; }
 }
 
-.home {
+#home {
     width:100%;
     margin:0;
     padding:0;
-    a {
-        font-size:@navFontSize;
-        position:relative;
-        top:@navUpPos;
-        padding:@navBorderPad;
-        border-radius:50%;
-        color:@white;
+    .navbar {
+        width:100%;
+        height:@navHeight;
+        margin:0;
+        border-bottom:@navBorder;
+        border-radius:0;
         background-color:@darkNavyBlue;
+        box-shadow:0 0.25em 0.125em @gray;
+        a { color:@white; }
+        ul {
+            overflow:auto;
+            width:100%;
+            margin:0;
+            padding:@navTitlePad;
+            text-align:center;
+        }
+        li {
+            display:inline;
+            position:relative;
+            font-family:@backupFont;
+            font-size:@navFontSize;
+            padding-left:@navTitleSpacing;
+        }
     }
-    i {
-        bottom:@navUpIconPos;
-        position:relative;
+    div {
+        text-align:center;
+        a {
+            font-size:@navFontSize;
+            position:relative;
+            top:@navUpPos;
+            padding:@navBorderPad;
+            border-radius:50%;
+            color:@white;
+            background-color:@darkNavyBlue;
+        }
+        i {
+            bottom:@navUpIconPos;
+            position:relative;
+        }
     }
     h1 { padding:@homeTitlePad; color:@white; }
     h3 { padding:@homeSubtitlePad; color:@white; }
 }
 
-.about {
-    padding-top:@sectionSeparatorSpace;
+#about,
+#projects,
+#contact {
+    padding:@sectionSeparatorSpace 0;
     background-color:@test;
-    .title-focus { width:48%; }
+}
+
+#about {
     img {
         display:block;
         margin:0 auto;
         border-radius:50%;
-        height:50vh;
+        width:25%;
     }
 }
 
-.projects {
-    padding-top:@sectionSeparatorSpace;
-    padding-bottom:@sectionSeparatorSpace;
-    background-color:@test;
-    .title-focus { width:35%; }
+#projects {
     .text-focus { padding:0; }
     .project-item {
         width:35%;
@@ -191,12 +174,7 @@ header {
     }
 }
 
-.contact {
-    padding-top:@sectionSeparatorSpace;
-    padding-bottom:@sectionSeparatorSpace;
-    background-color:@test;
-    .title-focus{ width:40%; }
-    
+#contact {
     .contact-form {
         width:50%;
         margin:0 auto;
@@ -207,9 +185,9 @@ header {
             font-size:1em;
             line-height:1.38em;
             width:100%;
-            border:0.13em solid transparent;
+            border:0.062em solid @gray;
             border-radius:0.44em;
-            padding:0.81em 0.81em 0.81em 3.34em;
+            padding:0.81em 0.81em 0.81em 4.5em;
             color:@darkGray;
             background-color:@white;
         }
@@ -225,24 +203,26 @@ header {
             min-height:12.5em;
             resize:vertical;
         }
-        input:hover,
-        textarea:hover,
-        input:focus, 
-        textarea:focus { background-color:@white; }
-        .form-field { padding-bottom:0.62em; position:relative; }
-        .field-img-name,
-        .field-img-email,
-        .field-img-text {
-            position:absolute;
-            font-size:1.38em;
-            background:transparent;
+        .contact-form-field { 
+            padding-bottom:0.62em; 
+            position:relative; 
+            .field-name,
+            .field-subject,
+            .field-email,
+            .field-text {
+                position:absolute;
+                font-size:1.25em;
+                background:transparent;
+            }
+            .field-name    { top:0.65em; left:1.5em; }
+            .field-subject { top:0.65em; left:1.5em; }
+            .field-email   { top:0.65em; left:1.5em; }
+            .field-text    { top:0.65em; left:1.5em; }
         }
-        .field-img-name  { top:11px; left:22px; }
-        .field-img-email { top:11px; left:18px; }
-        .field-img-text  { top:11px; left:18px; }
         .submit {
             font-family:@defaultFont;
             font-size:1.13em;
+            text-align:center;
         }
         .submit-btn {
             padding:0.62em 1.25em;
@@ -263,24 +243,37 @@ header {
 
 
 
-.footer {
+#footer {
+    text-align:center;
     padding:20px 0;
     background-color:#333333;
-}
-.footer-txt {
-    padding:10px 0;
-    color:@white;
-}
-.btn-footer {
-    border-radius:50%;
-    border:transparent;
-    background-color:transparent;
-    color:#c9c9c9;
-}
-.btn-footer:hover,.btn-footer.btn-active {
-    border:none;
-    background-color:#FF8110;
-    color:@white;
+    
+    .footer-item {
+        margin:0;
+        padding:0;
+        .footer-btn {
+            font-size:1.2em;
+            text-align:center;
+            vertical-align:middle;
+            padding:0.75em 0.77em;
+            border-radius:50%;
+            border:transparent;
+            background-color:transparent;
+            color:@gray;
+        }
+        .footer-btn:hover, 
+        .footer-btn.btn-active {
+            border:none;
+            background-color:@darkGray;
+            color:@white;
+        }
+    }
+    footer {
+        font-size:0.75em;
+        margin:0 auto;
+        padding:1.5em 0 0 0;
+        color:@white;
+    }
 }
 
 
