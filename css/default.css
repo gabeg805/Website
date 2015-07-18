@@ -1,86 +1,87 @@
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
 }
-html {
-  font-size: 100%;
-}
+html { font-size: 100%; }
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
 }
-h1,
-h2,
-h3,
-h4 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Roboto Slab', serif;
+  text-align:center;
+  margin:0;
+  padding:0;
   color: #3c3c3c;
+  padding:0 0 1em 0;
 }
-h1 {
-  font-family: 'Montserrat';
-  font-size: 3.5em;
-}
-h2 {
-  font-family: 'Alegreya Sans SC';
-  font-size: 3em;
-}
-h3 {
-  font-family: 'Alegreya Sans SC';
-  font-size: 2em;
-}
-h4 {
-  font-family: 'Alegreya Sans SC';
-  font-size: 1em;
-}
+h1 { font-size:4em; }
+h2 { font-size:3em; }
+h3 { font-size:2em; }
+h4 { font-size:1.5em; }
+h5 { font-size:1em; }
+h6 { font-size:0.85em; }
+
 p {
   font-size: 16px;
   line-height: 30px;
   color: #333333;
+  margin:0;
+  padding:2em 0;
 }
+
+.center {
+  width:50%;
+  margin:0 auto;
+  padding:0;
+}
+
 header {
   height: 100vh;
   background-size: 100% 100%;
-  background-image: url("../img/nightsky2.jpg");
+  background-image: url("../img/nightsky.jpg");
 }
-.title-focus {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto 3em auto;
-  border-bottom: 1px solid #3c3c3c;
+
+
+div.hr {
+  height:24px;
+  background:#e0ebe8 url("http://jblevins.org/svg/asterism.svg") no-repeat scroll center;
 }
-.title-focus h2 {
-  display: inline;
-  position: relative;
-  bottom: -0.5em;
-  padding: 0 0.5em;
-  background: #fff6eb;
+div.hr hr {
+  display: none;
 }
-.text-focus {
-  width: 50%;
-  margin: 0 auto;
-  padding: 2em 0;
-}
-.text-focus p {
-  margin: 0;
-}
+
+/* .title-focus { */
+/*   text-align: center; */
+/*   width: 50%; */
+/*   margin: 0 auto 3em auto; */
+/*   border-bottom: 0.062em solid #3c3c3c; */
+/* } */
+/* .title-focus h2 { */
+/*   display: inline; */
+/*   position: relative; */
+/*   bottom: -0.5em; */
+/*   padding: 0 0.5em; */
+/*   background: #fff6eb; */
+/* } */
+
 #home {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  width:100%;
+  margin:0;
+  padding:0;
 }
 #home .navbar {
-  width: 100%;
-  height: 4.75em;
-  margin: 0;
-  border-bottom: 1px solid #0f6f40;
-  border-radius: 0;
-  background-color: #041e4a;
-  box-shadow: 0 0.25em 0.125em #888888;
+  width:100%;
+  height:4.75em;
+  margin:0;
+  border-bottom:1px solid #0f6f40;
+  border-radius:0;
+  background-color:#041e4a;
+  box-shadow:0 0.1em 0.5em #888888;
 }
 #home .navbar a {
+  font-size: 0.9em;
   color: #ffffff;
 }
 #home .navbar ul {
@@ -93,13 +94,11 @@ header {
 #home .navbar li {
   display: inline;
   position: relative;
-  font-family: 'Alegreya Sans SC';
+  font-family: 'Roboto Slab', serif;
   font-size: 1.1em;
   padding-left: 1.5em;
 }
-#home div {
-  text-align: center;
-}
+#home div { text-align: center; }
 #home div a {
   font-size: 1.1em;
   position: relative;
@@ -113,42 +112,71 @@ header {
   bottom: 0.15em;
   position: relative;
 }
-#home h1 {
-  padding: 3em 0 0 0;
-  color: #ffffff;
-}
-#home h3 {
-  padding: 1em 0 0 0;
-  color: #ffffff;
-}
+#home h1  { color:#ffffff; padding:25vh 0 0 0; }
+#home h3  { color:#ffffff; padding:1em 0 0 0; }
+
 #about,
+#experience,
 #projects,
 #contact {
-  padding: 3em 0;
-  background-color: #fff6eb;
+    padding:7em 0;
+    background-color:#e0ebe8;
 }
+
+/* ***** Experience ***** */
 #about img {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
   width: 25%;
 }
-#projects .text-focus {
-  padding: 0;
+
+#about img + p {
+    padding:2em 0 0 0;
 }
-#projects .project-item {
-  width: 35%;
+
+/* ***** Experience ***** */
+#experience .work-block {
+  width: 50%;
   margin: 0 auto;
 }
-#projects .project-item h3 {
-  padding-top: 1em;
+#experience .work-block h4,
+#experience .work-block h5,
+#experience .work-block h6 {
+    padding:0 0 0.5em 0;
 }
-#projects .project-item h4 {
-  padding-top: 0.5em;
+#experience .work-block ul {
+    list-style-type: square;
+    padding:0.5em 0 3em 0;
+    margin:0;
 }
-#projects .project-item p {
-  padding-top: 1em;
+#experience .work-block ul:last-child {
+    padding:0.5em 0 0 0;
 }
+#experience .work-block li {
+  padding: 0.5em 0;
+}
+
+/* ***** Projects ***** */
+#projects h2 + p {
+    padding-bottom:2em;
+}
+#projects h5 + p {
+    padding-top:1em;
+}
+#projects div + div {
+    padding-top:3em;
+}
+#projects .project-item {
+  width:35%;
+  margin:0 auto;
+}
+#projects .project-item h4,
+#projects .project-item h5 {
+    padding:0 0 0.5em 0;
+}
+
+/* ***** Contacts ***** */
 #contact .contact-form {
   width: 50%;
   margin: 0 auto;
@@ -228,6 +256,7 @@ header {
   background: #3cb0fd;
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
 }
+
 #footer {
   text-align: center;
   padding: 20px 0;
