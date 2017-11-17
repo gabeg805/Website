@@ -1,0 +1,50 @@
+#footer
+{
+    background-color : #191919;
+    padding          : 1em;
+}
+
+#footer footer
+{
+    color     : white;
+    font-size : 0.65em;
+}
+
+#footer .footer-wrapper
+{
+    text-align: center;
+}
+
+#footer .footer-wrapper ul
+{
+    display         : inline-block;
+    list-style-type : none;
+    margin          : 0;
+    padding         : 0;
+
+    /* For IE, the outcast */
+    zoom            : 1;
+    *display        : inline;
+}
+
+#footer .footer-wrapper li
+{
+    float   : left;
+    padding : 0 0.75em;
+    line-height : 0;
+}
+
+#footer .footer-wrapper a
+{
+    border-radius : 50%;
+    color         : #b2b2b2;
+    display       : block;
+    font-size     : 1.25em;
+    padding       : 0.4em;
+}
+
+#footer .footer-wrapper a:hover
+{
+  background-color : #111111;
+  color            : white;
+}
