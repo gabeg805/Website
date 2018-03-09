@@ -81,6 +81,8 @@ header
     background-color : #f7f7f7;
 	box-shadow       : 0 0.5em 0.5em -0.5em #a9a9a9;
     margin-bottom    : 0.5em;
+    position         : fixed;
+    width            : 100%;
 }
 
 header a,
